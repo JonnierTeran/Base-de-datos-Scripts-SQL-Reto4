@@ -1,0 +1,12 @@
+Select "Consulta 1";
+select fabricante from fabricantes order by fabricante;
+select  "Consulta 2";
+select fabricante, precio_unitario, año from bicicleta where año >= 2019 order by fabricante;
+Select "Consulta 3";
+select fabricante from motocicleta where id_provedor=101; 
+Select "Consulta 4";
+select fabricante from intencion where alias_inten="lucky" order by fabricante; 
+Select "Consulta 5";
+select c.alias, c.nombre, c.apellido from cliente c,intencion i where c.alias=i.alias_inten and i.fabricante="yeti" order by nombre;
+Select "Consulta 6";
+select count(fabricante )from bicicleta where año >= 2019;
